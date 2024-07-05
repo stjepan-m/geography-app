@@ -1,0 +1,49 @@
+{
+  "name": "geography-app",
+  "version": "0.0.1",
+  "description": "A Quasar Project",
+  "productName": "Geography App",
+  "author": "stjepan-m <stjepan.mlakic@fer.hr>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.ts,.vue ./",
+    "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0",
+    "build:login-enabled": "cross-env BUILD_ENV=login-enabled quasar build"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.11",
+    "@turf/turf": "^6.5.0",
+    "axios": "^1.5.0",
+    "epsg-index": "^1.2.0",
+    "ol": "^9.2.4",
+    "pinia": "^2.0.11",
+    "proj4": "^2.11.0",
+    "quasar": "^2.16.4",
+    "vue": "^3.4.31",
+    "vue-i18n": "^9.13.1",
+    "vue-router": "^4.4.0",
+    "vue3-google-login": "^2.0.26"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.9.3",
+    "@quasar/cli": "^2.4.1",
+    "@types/node": "^20.14.9",
+    "@types/proj4": "^2.5.5",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "autoprefixer": "^10.4.2",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "prettier": "2.8.8",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": "^20 ||^18",
+    "npm": ">= 8",
+    "yarn": ">= 1.21.1"
+  }
+}
